@@ -1,6 +1,8 @@
 Aura DI
 =======
 
+**This fork is only for PHP 5.3. Use [auraphp/Aura.Di](https://github.com/auraphp/Aura.Di) for other versions of PHP.**
+
 The Aura DI package provides a dependency injection container system with the
 following features:
 
