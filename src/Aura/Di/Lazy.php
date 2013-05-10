@@ -37,7 +37,7 @@ class Lazy
      * @return void
      * 
      */
-    public function __construct(callable $callable)
+    public function __construct(\Closure $callable)
     {
         $this->callable = $callable;
     }

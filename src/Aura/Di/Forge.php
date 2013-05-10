@@ -86,8 +86,8 @@ class Forge implements ForgeInterface
      */
     public function newInstance(
         $class,
-        array $merge_params = [],
-        array $merge_setter = []
+        array $merge_params = array(),
+        array $merge_setter = array()
     ) {
         // base configs
         list($params, $setter) = $this->config->fetch($class);
@@ -131,7 +131,7 @@ class Forge implements ForgeInterface
      * @return array
      * 
      */
-    protected function mergeParams($params, array $merge_params = [])
+    protected function mergeParams($params, array $merge_params = array())
     {
         $pos = 0;
         foreach ($params as $key => $val) {
